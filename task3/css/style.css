@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body {
+	font-family: 微软雅黑;
+	margin: 0;
+	padding: 20px;
+}
+#team {
+	border:1px solid #999;
+	background: #eee;
+	overflow: auto;
+	padding: 20px;
+}
+
+.logo {
+	border:1px solid #999;
+	width: 200px;
+	background: white;
+	float: left;
+}
+img {
+	width: 80px;
+	height: 80px;
+	float: left;
+	padding: 20px;
+}
+.member {
+	float: right;
+	border:1px solid #999;
+	width: 120px;
+	background: white;
+}
+ .center{
+    border: 1px solid #999;
+    margin-left: 220px;
+    margin-right:140px;
+    background-color: white;
+}
+.center p,h3 {
+	padding: 20px;
+}

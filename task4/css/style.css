@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.box {
+	width: 400px;
+	height: 200px;
+	background: #ccc;
+	overflow: hidden;
+}
+.center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+.quarter {
+	background: #fc0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	position: absolute;
+}
+.left {
+	top:-50px;
+	left: -50px;
+}
+.right {
+	bottom: -50px;
+	right: -50px;
+}
