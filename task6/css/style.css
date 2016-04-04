@@ -1,14 +1,10 @@
-/*做得好的地方，属性使用得比较合理，细看一两点还可以*/
-/*需要加强的地方：1.代码分块。2.整体布局设计。3.浮动和清除浮动。4.position的使用。5.命名语义化。*/
-/*1.代码分块的目的当然也是为了方便维护*/
-/*2.结构也要分块，像这里可以分为header,footer,中间三段。paper加padding的话就不用以后里面每部分的都加左右margin。两列布局一般用float就行*/
-/*common start***************************************/
+
 @charset "utf-8";
 * {
     margin: 0;
     padding: 0;
 }
-/*清楚浮动直接用别人的方案就好，在需要清除浮动的元素加个class就好，初学还不用深究，网上有很多方案。*/
+/*清楚浮在需要清除浮动的元素加个class*/
 .clearfix:before, .clearfix:after{
     display: table;
     content: "";
@@ -24,11 +20,8 @@
     height: 1386px;
     margin: 0 auto;
     font-family: "MicrosoftYaHei";
-    /*padding: 0 30px;*/
 }
-/*common end***********************************/
 
-/*hearder start*************************************/
 #header {
     height: 61px;
     width: 892px;
@@ -63,9 +56,7 @@
     padding-top: 45px;
     font-family: "黑体";
 }
-/*header end**********************************/
 
-/*about start*******************************/
 #about .img{
     background-image: url(../img/left.png);
     width: 640px;
@@ -98,10 +89,7 @@
     height: 350px;
     float: right;
     margin-right: 45px;
-    /*position: relative;*/
-    /*left: -45px;*/
     border-top: 2px solid #cc7f90;
-    /*如果用一个div装.about-text和.img，只用设置一次padding-top，以后改也方便，#paper那里也是，有几个地方，我就不一一改了，有点麻烦*/
     margin-top: 30px;
 }
 
@@ -155,9 +143,7 @@
     bottom: 10px;
     overflow: hidden;
 }
-/*about end**********************/
 
-/*wwh start***************************/
 #wwh {
     margin: 30px 0 0 44px;
 }
@@ -225,14 +211,10 @@ li {
     color: #cc7680;
     font-style: oblique;
 }
-/*wwh end***************************/
 
-/*article start*******************/
 #article {
-    /*clear: both;*/
     float: left;
     margin-left: 44px;
-    /*position: relative;*/
     display: inline-block;
     border-top: 2px solid #10446B;
     margin-top: 14px;
@@ -286,9 +268,7 @@ li {
 #article p.indent {
     text-indent: 2em;
 }
-/*article end********************************/
 
-/*doc start*********************************/
 #doc{
     float: right;
     width: 458px;
@@ -418,9 +398,7 @@ li {
     margin-right: -35px;
     float: right;
 }
-/*doc end**************************/
 
-/*footer start*************************/
 #footer {
     height: 50px;
     border-top: 1px solid #938e8c;
@@ -436,4 +414,3 @@ li {
     font-size: 12px;
     font-family: "黑体";
 }
-/*footer end*******************/
