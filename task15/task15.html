@@ -36,12 +36,25 @@
         */
         var data = [];
         var source_list = document.getElementById('source').getElementsByTagName('li');
-        
+
         for (var i = 0; i < source_list.length; i++) {
-            var city_name = source_list[i].innerHTML.slice(0, 2);
-            var city_num = source_list[i].innerHTML.slice(-6, -4);
-            data.push([city_name, +city_num]);
+            /* 
+              string 字符串; 
+              str 指定字符; 
+              split(),用于把一个字符串分割成字符串数组; 
+              split(str)[0],读取数组中索引为0的值（第一个值）,所有数组索引默认从0开始; 
+              
+                 function getStr(string,str){ 
+                 var str_before = string.split(str)[0]; 
+                 var str_after = string.split(str)[1]; 
+                 alert('前：'+str_before+' - 后：'+str_after); 
+             } 
+             */
+            var city_name = source_list[i].innerHTML.split("空气质量")[0];
+            var city_num = source_list[i].getElementsByTagName("b")[0].innerHTML;
+
             //city_num取出来是字符串格式，前面加个"+"，可以快速把字符串转化成数字格式
+            data.push([city_name, +city_num]);
         }
 
         /*
