@@ -10,3 +10,4 @@
 ##[task14](http://htmlpreview.github.io/?https://github.com/call31/IFE/blob/gh-pages/task14/task14.html)
 ##[task15](http://htmlpreview.github.io/?https://github.com/call31/IFE/blob/gh-pages/task15/task15.html)
 ##[task16](http://htmlpreview.github.io/?https://github.com/call31/IFE/blob/gh-pages/task16/task16.html)
+##[task18](http://htmlpreview.github.io/?https://github.com/call31/IFE/blob/gh-pages/task18/task18.html)
